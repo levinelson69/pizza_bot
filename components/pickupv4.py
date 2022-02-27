@@ -14,9 +14,6 @@ def not_blank(question):
 
 
 
-
-
-
 #Basic instructions 
 question = ("Please enter your name ")
 customer_details['name'] = not_blank(question )
