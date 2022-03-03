@@ -1,4 +1,6 @@
 # Pizza Bot Program
+#Bugs - Phone number input allows letters
+#Name input allows numbers
 import random
 from random import randint
 
@@ -13,7 +15,7 @@ def not_blank(question):
     while not valid:
         response = input(question)
         if response != "":
-            return response
+            return response.title()
         else:
             print("This cannot be blank")
 
@@ -32,8 +34,7 @@ def welcome():
     print("I will be here to help you to order your delicious Dream Pizza")
 
 
-    # Menu for pickup or delivery
-
+# Menu for pickup or delivery
 def order_type():   
     print ("Is your order for pickup or delivery?")
     print ("For pickup please enter 1")
@@ -46,9 +47,6 @@ def order_type():
                     print ("Pickup")
                     pickup()
                     break
-
-                    
-
                 elif delivery == 2:
                     print ("Delivery")
                     break
@@ -57,10 +55,6 @@ def order_type():
         except ValueError:
             print("That is not a valid number")
             print("Please enter 1 or 2")
-
-
-
-
 
 # Pick Up information - name and phone number
 def pickup():
