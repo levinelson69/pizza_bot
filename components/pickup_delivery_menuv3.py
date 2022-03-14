@@ -3,7 +3,6 @@
 # Bug - Need to make it so that it only accepts 1 or 2
 
 print ("Is your order for pickup or delivery?")
-
 print ("For Pickup please enter 1")
 print ("For Delivery please enter 2")
 while True:
